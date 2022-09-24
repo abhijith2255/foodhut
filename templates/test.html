@@ -1,0 +1,586 @@
+<style>
+    
+.navbar-brand{
+   
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 85px;
+    
+}
+.navbar{
+    background-color: whitesmoke;
+    font-weight: bold;
+    
+}
+.dropdown-item{
+    font-weight: bold;
+    background-color: rgb(230, 113, 119);
+
+}
+.image1{width: 100%;
+    height: 500px;
+}
+   
+.titiletext{
+   font-weight:bold;
+   margin-left: 55px;
+   font-weight: bold;
+   color: red;
+}
+
+   
+.abouttitle{
+    margin-left: 55px;
+    color:#fff;
+
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    
+}
+.profilepic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 100px;
+    height: 100px;
+   
+}
+.lastline{
+    font-weight:650;
+    margin-left: 55px;
+    margin-top: -36px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+.profilename{
+    text-align: center;
+     font-size:larger;
+    color: #fff;
+    font-weight: bold;
+}
+.profilename1{
+    text-align: center;
+    font-size:x-small;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -9px;
+    color: #fff;
+}
+.profileplace{
+    text-align: center;
+    font-size: x-small;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: -8px;
+    color: #fff;
+}
+.cybertext{
+    text-align: center;
+    font-weight: bold;
+}
+.webtext{
+    text-align: center;
+    font-weight: bold;
+}
+.webapptext{
+    text-align: center;
+    font-weight: bold;
+
+
+}
+.desiningfont{
+    color:red;
+}
+.card-title{
+   font-weight: bold;
+    margin-top: 16px;
+}
+.servicediv{
+    padding-top: 15px;
+}
+
+.servicedtext{
+    color: red;
+    font-weight: bold;
+    margin-left: 55px;
+}
+.card{
+    background-color: antiquewhite;
+}
+.skilldiv{
+    margin-left: 45px;
+    padding-top: 10px;
+}
+.skilltext{
+    color: red;
+    font-weight: bold;
+    margin-left: 55px;
+    padding-top: 16px;
+}
+.progress{
+    margin-top: 33px;
+    
+}
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none !important;
+}
+.progress-title{
+    width: 100%;
+    height: 50px;
+}
+.progress-title h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    margin-bottom: -34px;
+    margin-top: 6px;
+}
+.progress{
+    height: 14px;
+    background: #171b3c;
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px #4f4c4c;
+    margin-bottom: 10px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    border: 1px solid #000;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    width: 41px;
+    height: 16px;
+    line-height: 17px;
+    background: #171b3c;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #000;
+    border-top: none;
+    box-shadow: 0 2px 2px #4f4c4c;
+    position: absolute;
+    bottom: -16px;
+    right: 60px;
+    font-weight: bold;
+    font-style: italic;
+}
+@-webkit-keyframes animate-positive{
+    0%{
+        width: 0;
+    }
+}
+@keyframes animate-positive{
+    0%{
+        width: 0;
+    }
+}
+.skilltext{
+    margin-left: -27px;
+    font-weight: bold;
+    text-align: center;
+}
+.skiltext{
+    color: #fff;
+}
+ 
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5), url(banner5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.5s;
+
+}
+.submitbutton{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+
+}
+.contact-text{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.single-cta i{
+    color:orangered;
+    float: left;
+    font-size: 20px;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi's Personal web site</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container-fluid">
+  <div class="row ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+</header>
+<section>
+  <div class="row ">
+    <img src="/banner.jpg" class="img-fluid" alt="" >
+  </div>
+  
+</section>
+<section class="bg-dark">
+  <div class="row col-12 p-3 ms-10 ">
+    <div ><h5 class="titiletext">About me</h5 ></div>
+      <div><p> <h2 class="abouttitle  ">I'm a Passionate designer & developer who loves <br> simplicity in things and crafts beautiful user </h2> <br> <h1 class="lastline">interfaces with love.</h1></p></div> 
+    </div>
+  </section>
+  
+  <section>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="mainprofile bg-dark">
+      
+          <img src="https://lh3.googleusercontent.com/a-/AOh14GiO9hHoeHpRW6Bn1orDp1nIg2nIiIoA9xBtHMuYRw=s288-p-no" 
+          alt="" class="profilepic rounded-circle">
+          <h6 class="profilename ">AbhiJith Thilakan</h6>
+          <h6 class="profilename1 ">web designer-cyber security-web Develepment </h3>
+          <h6 class="profileplace">Kerala,India</h6>
+        </div>
+    </div>
+  </div>
+  </section>
+ <section>
+    <div class="container-fluid bg-dark">
+      <h5 class="titiletext">Services</h5>
+      <div class="row ">
+        <div class="servicediv col-md-4 d-flex justify-content-around" >
+          <div class="card text-center p-3" style="width: 15rem;">
+            <i class="desiningfont fa-solid fa-palette display-1"></i>
+            
+              <h5 class="card-title text-center">Web Desining</h5>
+            </div>
+        </div>
+
+        <div class="servicediv col-md-4 d-flex justify-content-around">
+          <div class="card text-center p-3" style="width: 15rem;">
+            <i class="desiningfont fa-solid fa-computer display-1"></i>
+            
+              <h5 class="card-title text-center">Cyber Security</h5>
+          </div>
+        </div>
+
+        <div class="servicediv col-md-4 d-flex justify-content-around " >
+          <div class="card text-center p-3" style="width: 15rem;">
+            <i class="desiningfont fa-solid fa-laptop-code display-1 "></i>
+            
+              <h5 class="card-title text-center">Web Appdev</h5>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+ <section class="bg-dark ">
+    <div class="container ">
+      <div class="row"><H5 class="skilltext">Skills</H5></div>
+      <div class="row">
+        <div class="col-md-12" style="margin-bottom:25px;">
+          <div class="progress-title">
+            <h3 class="skiltext"> Web Desining</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%; background: #ef2d56;" >
+                <div class="progress-value">65%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-title">
+            <h3 class="skiltext">Html/Css</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%; background: #ff9900;" >
+                <div class="progress-value">65%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-title">
+            <h3 class="skiltext">JavaScript</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%; background: #82B700;" >
+                <div class="progress-value">65%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-title">
+            <h3 class="skiltext">Bootstrap</h3>
+            <div class="progress">
+              <div class="progress-bar" style="width: 65%; background: #00ebdd;" >
+                <div class="progress-value">65%</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section>
+      <div class="conatiner ">
+        <div class="row" >
+          
+        
+        <div class="hero  col-12 "  >
+          
+          <form id="submit-form"  action="" >
+            <h2 class="contact-text">Contact Me</h2>
+             <div class="input-group">
+              <input type="text" id="name" required>
+              <label for="name"><i class="fas fa-user"></i> Your Name</label>
+             </div>
+             <div class="input-group">
+              <input type="" id="number" required>
+              <label for="number"><i class="fas fa-phone-square-alt"></i> Phone No.</label>
+             </div>
+             <div class="input-group">
+              <input type="email" id="email" required>
+              <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+             </div>
+             <div class="input-group" >
+              <textarea id="meassage"  rows="8" required style="height: 85px; "></textarea>
+              <label for="meassage"><i class="fas fa-comments"></i> Your Meassage</label>
+             </div>
+             <button class="submitbutton" type="submit">SUMBIT<i class="fas fa-paper-plane"></i> </button>
+
+          </form>
+          <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbyLZvpHKpGDe3xAfcK1EhviTIJ1hBytQ7CP9mgS/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+          
+                    }
+                })
+            })
+          </script>
+        
+        
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+<footer class="bg-dark  text-white">
+  <!-- Grid container -->
+  <div class="container-fluid p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4 text-center">
+       <h6 style="font-weight:bold">Follow us</h6>
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+      <div class="footer-cta ">
+        <div class="row">
+          <div class="col-4">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="cta-text">
+              <h6>Find us</h6>
+              <span>Malappuram.kondotty <br> 673637</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="cta-text">
+              <h6>Call us</h6>
+              <span>+91-9567474388</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="single-cta">
+              <i class="fas fa-envelope-open"></i>
+            </div>
+            <div class="cta-text">
+              <h6>Mail us</h6>
+              <span>abhijithaju005@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+   
+    
+ </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Abhijithp.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+      
+
+  
+
+
+  
+   <script src="https://kit.fontawesome.com/9b14a74345.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+</html>
